@@ -5,7 +5,7 @@ import pickle
 template_folder_path = 'templates'
 app = Flask(__name__, template_folder=template_folder_path,static_folder='static')
 
-model = pickle.load(open('GG.pkl', 'rb'))
+model = pickle.load(open('gwp.pkl', 'rb'))
 
 @app.route('/')
 def home():
